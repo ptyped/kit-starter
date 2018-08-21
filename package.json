@@ -5,11 +5,6 @@
   "author": "chrisdmacrae",
   "license": "MIT",
   "private": true,
-  "scripts": {
-    "postinstall": "@ptyped/kit init",
-    "start": "@ptyped/kit start",
-    "build": "@ptyped/kit build"
-  },
   "dependencies": {
     "tailwindcss": "^0.6.5"
   }
