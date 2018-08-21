@@ -6,7 +6,7 @@ const laggard = require('laggard')
 const path = require('path')
 const postcss = require('postcss')
 const postcssReporter = require('postcss-reporter')
-const tailwindcss = require('tailwindcss')
+const tailwindCss = require('tailwindcss')
 
 const tailwindConfigPath = path.resolve(__dirname, "tailwind.js")
 
@@ -16,6 +16,7 @@ module.exports = (config) => {
 
     plugins.concat([
         cssImport,
+        tailwindCss(tailwindConfigPath),
         cssNext,
         laggard,
         cssImmutable,
