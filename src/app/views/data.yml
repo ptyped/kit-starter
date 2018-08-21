@@ -1,0 +1,11 @@
+# Put any data you'd like all views in this 
+# directory and any sub-directory to have
+# e.g:
+#
+# example_key: value
+# example_array:
+# - value1
+# - value2
+# example_object:
+#   key1: value
+#   key2: value
