@@ -14,10 +14,10 @@ module.exports = (config) => {
     let plugins = []
     const env = config.get('env')
 
-    plugins.concat([
+    plugins = plugins.concat([
         cssImport,
         tailwindCss(tailwindConfigPath),
-        cssNext,
+        cssNext({warnForDuplicates: false}),
         laggard,
         cssImmutable,
         postcssReporter({ clearMessages: true, throwError: false }),
