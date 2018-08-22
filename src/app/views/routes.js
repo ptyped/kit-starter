@@ -1,8 +1,8 @@
-const express = require('express')
-const router = express.Router()
-
 /**
- * Put your routes here.
+ * Put your custom routes here.
  */
-
-module.exports = router
+module.exports = {
+    "_test-route/": (req, res, next) => {
+        res.render('404.html', {})
+    }
+}
