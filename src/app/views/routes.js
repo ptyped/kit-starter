@@ -3,6 +3,6 @@
  */
 module.exports = {
     "_test-route/": (req, res, next) => {
-        res.render('404.html', {})
+        res.render('index.html', {})
     }
 }
