@@ -1,8 +1,8 @@
-/**
- * Put your custom routes here.
- */
-module.exports = {
-    "/_test-route/": (req, res, next) => {
-        res.render('index.html', {})
-    }
+module.exports = function(router) {
+  /**
+   * Put your routes here.
+   */
+  
+  // Return any redirects
+  return {}
 }
